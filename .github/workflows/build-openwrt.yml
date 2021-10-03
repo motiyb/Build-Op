@@ -61,6 +61,7 @@ jobs:
         git clone $REPO_URL -b $REPO_BRANCH openwrt
         ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
         git clone https://github.com/Lienol/openwrt
+        cd openwrt && cd ..
       
     - name: Load custom feeds
       run: |
